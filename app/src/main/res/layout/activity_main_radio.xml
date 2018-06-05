@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/sex"/>
+
+        <RadioGroup
+            android:id="@+id/radGrpSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/radBtnMale">
+
+            <RadioButton
+                android:id="@+id/radBtnMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex_male"
+                android:textSize="25sp"
+                />
+
+            <RadioButton
+                android:id="@+id/radBtnFeMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex_female"
+                android:textSize="25sp"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/age"/>
+
+        <RadioGroup
+            android:id="@+id/radGrpAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@id/radBtnAgeRange1">
+
+            <RadioButton
+                android:id="@+id/radBtnAgeRange1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male_age_range1"
+                android:textSize="25sp"
+                />
+
+            <RadioButton
+                android:id="@+id/radBtnAgeRange2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male_age_range2"
+                android:textSize="25sp"
+                />
+
+            <RadioButton
+                android:id="@+id/radBtnAgeRange3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male_age_range3"
+                android:textSize="25sp"
+                />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtSug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/suggestion"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_ok"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
